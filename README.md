@@ -10,7 +10,7 @@ I use this script to place the arch logo on all my wallpapers.
 # Usage
 
 ```
-bash mepapemaker.sh file.img
+bash archwallmaker.sh file.img
 ```
 
 # Examples
