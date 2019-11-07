@@ -9,6 +9,9 @@ width=$(magick convert "$pape" -format "%w" info:)
 # Calculate appropriate height for logo on the wallpaper
 logo_height=$(($height*9/16))
 
+# Download Arch Mask
+wget -nc https://raw.githubusercontent.com/felipefacundes/arch-wallpaper-maker/master/arch.png
+
 # Generate Mask
 convert "./arch.png" -gravity center  -resize $logo_height -background white -extent "${width}x${height}" -flatten "temp_logo.png" 
 
